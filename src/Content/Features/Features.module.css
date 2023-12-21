@@ -1,0 +1,192 @@
+.container{
+    margin-top: 100px;
+}
+/*Description*/
+.container__description{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.container__description__title, .container__description__title__item,.container__module__title{
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 28px;
+    color: hsl(229, 31%, 21%);
+    font-weight: 500;
+}
+.container__description__main,.container__module__description{
+    text-align: center;
+    margin: 0 auto 30px auto;
+    color: #a3a4a8;
+    line-height: 1.5;
+    font-size: 16px;
+    max-width: 330px;
+}
+/*Modal*/
+.container__modal__description{
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
+.container__modal__title{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+
+}
+.container__modal__title__item:hover{
+    color: hsl(0, 94%, 66%);
+    transition: 0.3s ease;
+}
+
+.container__modal__title div{
+    padding-top: 15px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    width: 90%;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+    box-shadow: 0 4px 2px -2px lightgray;
+
+}
+.container__modal__title div:hover{
+    transition: 0.3s ease;
+    border-bottom: 4px solid  hsl(0, 94%, 66%);;
+}
+/*Modal*/
+.container__modal__main{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.container__description__button{
+    display: flex;
+    justify-content: center;
+}
+.container__modal__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-top: 40px;
+    max-width: 450px;
+}
+/*Grafics*/
+.container__grafic{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container__grafic__tab__img{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 200px;
+    position: absolute;
+    z-index: 1001;
+}
+.container__grafic__tab__img__second{
+    margin-left: -150px;
+    height: 270px;
+    position: absolute;
+    z-index: 1001;
+}
+.container__grafic__item{
+    border-bottom-right-radius: 40%;
+    margin-top: 60px;
+    z-index: 1;
+    background-color: hsl(231, 69%, 60%);
+    width: 310px;
+    height: 230px;
+}
+.container__description__button__item{
+    border: none;
+    height: 45px;
+    width: 120px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 0 auto;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+}
+.container__description__button__item:hover{
+    color: hsl(231, 69%, 60%);
+    background-color: white;
+    border: 2px solid hsl(231, 69%, 60%);
+    transition: 0.3s ease;
+}
+@media only screen and (min-width: 765px){
+    .container__description{
+        max-width: 550px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .container__description__title__item{
+        font-size: 32px;
+    }
+    .container__list{
+        display: flex;
+    }
+    .container__description__main{
+        font-size: 18px;
+        max-width: 550px;
+    }
+    .container__modal__title{
+        flex-direction: row;
+        max-width: 660px;
+    }
+    .container__modal__title div{
+        margin-right: -10px;
+        padding-bottom: 20px;
+        width: 320px;
+        font-size: 16px;
+        font-weight: 500;
+        border-bottom: 4px solid white;
+        box-shadow: 0 4px 2px -2px lightgray;
+    }
+    /*Modal*/
+    .container__modal__main{
+        max-width: 1250px;
+        margin-top: 80px;
+       flex-direction: row;
+    }
+    .container__grafic__item{
+        margin-top: 90px;
+        width: 530px;
+        height: 330px;
+    }
+    .container__description__title__item{
+        text-align: center;
+    }
+    .container__description__title{
+        font-size: 35px;
+    }
+    .container__module__title{
+        font-size: 32px;
+        text-align: left;
+    }
+    .container__module__description{
+        font-size: 18px;
+        text-align: left;
+    }
+    .container__grafic__tab__img{
+        margin-left: 100px;
+        height: 350px;
+    }
+    .container__grafic__tab__img__second{
+        height: 400px;
+        margin-right: -100px;
+    }
+    .container__description__button__item{
+        left: 0;
+    }
+}
+

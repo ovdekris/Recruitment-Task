@@ -1,0 +1,116 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+/*Description*/
+.container__description{
+    text-align: center;
+    padding: 50px 20px 0 20px;
+    margin: 0 auto;
+    max-width: 320px;
+}
+.container__description__title{
+    color: hsl(229, 31%, 21%);
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.container__description__main{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #a3a4a8;
+    line-height: 1.5;
+}
+.container__description__button{
+    display: flex;
+}
+.container__description__button__item{
+    border: none;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bolder;
+    margin-right: 20px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+}
+.container__description__button__first{
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+}
+.container__description__button__first:hover{
+    color: hsl(231, 69%, 60%);
+    background-color: white;
+    border: 2px solid hsl(231, 69%, 60%);
+    transition: 0.3s ease;
+}
+.container__description__button__second{
+    color: hsl(229, 31%, 21%);
+    background-color: whitesmoke;
+}
+.container__description__button__second:hover{
+    color: dimgrey;
+    background-color: white;
+    border: 2px solid dimgrey;
+    transition: 0.3s ease;
+}
+/*Grafics*/
+.container__grafic{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+.container__grafic__image{
+    height: 250px;
+    position: absolute;
+    z-index: 1001;
+}
+.container__grafic__item{
+    border-bottom-left-radius: 40%;
+    margin-top: 60px;
+    z-index: 1;
+    background-color: hsl(231, 69%, 60%);
+    width: 280px;
+    height: 200px;
+}
+@media (min-width: 765px) {
+    .container{
+        flex-direction: row;
+    }
+    .container__grafic__image{
+        height: 500px;
+    }
+    .container__grafic__item{
+        margin-top: 150px;
+        width: 500px;
+        height: 330px;
+    }
+    /*Description*/
+    .container__description{
+        text-align: left;
+        padding-top: 100px;
+        margin-left: 150px;
+        max-width: 500px;
+    }
+    .container__description__title{
+        text-align: left;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .container__description__main{
+        text-align: left;
+       font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .container__description__button__item{
+        font-size: 14px;
+        height: 45px;
+    }
+}
